@@ -6,6 +6,8 @@
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
 
+    <link rel="stylesheet" href="css/lib/12bool-flex.css">
+
     <link rel="stylesheet" href="css/style.css">
 
     <title>Spotify WebApp</title>
@@ -16,7 +18,7 @@
 
     <div class="container-fluid">
         
-        <div class="media_player row">
+        <div class="media_player row justify-between">
 
           <div class="title_song row">
 
@@ -39,9 +41,31 @@
           
           <div class="player">
 
+            <div class="row justify-around buttons_play no-wrap container_2">
+                <a href=""><i class="fas fa-random"></i></a>
+                <a href=""><i class="fas fa-fast-backward"></i></a>
+                <a href=""><i class="fas fa-play"></i> </a>
+                <a href=""><i class="fas fa-fast-forward"></i></a>
+                <a href=""><i class="fas fa-redo-alt"></i></a>   
+            </div>
+
+            <div class="row justify-around items-center time_play">
+                <a href="">0:25</a>
+                <div class="reproduction">
+
+                </div>
+                <a href="">4:30</a>
+            </div>
+
           </div>
 
-          <div class="volume"></div>
+          <div class="volume row justify-around items-center">
+            <a href=""><i class="fas fa-list-ul"></i></a>
+            <a href=""><i class="fas fa-laptop"></i></a>
+            <div class="reproduction_2">
+
+            </div>
+          </div>
 
         </div>
 
@@ -50,11 +74,15 @@
 
         <div class="sidebar">
 
+            <div class="logo">
+              
+            </div>
+
         </div>
 
         <!-- UPGRADE SECTION -->
 
-        <div class="upgrade row-reverse">
+        <div class="upgrade r-reverse">
 
             <button>
                 <p>EFFETTUA L'UPGRADE</p>
