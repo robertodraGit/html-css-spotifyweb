@@ -6,6 +6,8 @@
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
 
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet"> 
+
     <link rel="stylesheet" href="css/lib/12bool-flex.css">
 
     <link rel="stylesheet" href="css/style.css">
@@ -14,9 +16,9 @@
 </head>
 <body>
 
-     <!-- MEDIA PLAYER FIXED BOTTOM -->
-
     <div class="container-fluid">
+
+             <!-- MEDIA PLAYER FIXED BOTTOM -->
         
         <div class="media_player row justify-between">
 
@@ -41,7 +43,7 @@
           
           <div class="player">
 
-            <div class="row justify-around buttons_play no-wrap container_2">
+            <div class="row justify-around items-center buttons_play no-wrap container_2">
                 <a href=""><i class="fas fa-random"></i></a>
                 <a href=""><i class="fas fa-fast-backward"></i></a>
                 <a href=""><i class="fas fa-play"></i> </a>
@@ -72,17 +74,34 @@
 
          <!-- SIDEBAR FIXED LEFT -->
 
-        <div class="sidebar">
+        <div class="sidebar row column">
 
             <div class="logo">
+
+                <img src="img/logo.svg" alt="">
               
+            </div>
+
+            <div class="home_btn">
+                <a href=""><i class="fas fa-home"></i>
+                <span>Home</span></a>
+            </div>
+
+            <div class="home_btn">
+                <a href=""><i class="fas fa-search"></i>
+                <span>Cerca</span></a>
+            </div>
+
+            <div class="home_btn">               
+                <a href=""><i class="fas fa-bookmark"></i>
+                <span>La tua libreria</span></a>
             </div>
 
         </div>
 
         <!-- UPGRADE SECTION -->
 
-        <div class="upgrade r-reverse">
+        <div class="upgrade row r-reverse">
 
             <button>
                 <p>EFFETTUA L'UPGRADE</p>

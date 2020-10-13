@@ -1,3 +1,11 @@
+html {
+    font-size: 85%;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+}
+
 /*  css media player footer */
 
 .media_player {
@@ -45,7 +53,7 @@
 
 .player {
     flex-basis: 400px;
-    padding: 1rem 1rem;
+    padding-top: 2rem;
 }
 
 .player i {
@@ -59,6 +67,13 @@
 .container_2 {
     width: 50%;
     margin: 0 auto;
+}
+
+@media all  and (max-width:624px) {
+    
+    .container_2 {
+        width: 90%;
+    }
 }
 
 .time_play a {
@@ -102,36 +117,31 @@
     position: fixed;
     left: 0%;
     z-index: 998;
+    padding-left: 1rem;
+    padding-top: 1rem;
 }
 
-@media all  and (max-width:624px) {
-    .sidebar {
-        width: 90px;
-    }
-
-    .container_2 {
-        width: 90%;
-    }
+.sidebar a {
+    color: grey;
+    text-decoration: none;
 }
 
-.logo {
-    height: 75px;
-    width: 280px;
-    background-image: url("../img/logo.svg");
-    background-repeat: no-repeat;
-    background-size: contain;
-    background-position: center;
-    background-size: 50%;
+.sidebar a:hover {
+    color: white;
+    border-left: 3px solid lime;
 }
 
-@media all  and (max-width:624px) {
-    .logo {
-        width: 90px;
-        background-image: url("../img/logo-small.svg");
-        background-position: center;
-        margin-left: 5px;
-        background-size: 50%;
-    }
+.sidebar i {
+    padding-left: 1rem;
+    margin-right: 0.5rem;
+}
+
+.logo img {
+    max-height: 40px;
+}
+
+.home_btn {
+    margin-top: 1rem;
 }
 
 /*  upgrade section */
