@@ -12,7 +12,6 @@
     width: 100vw;
     height: 100vh;
     margin: 0 auto;
-    background-color: #121212;
   }
 
 .container {
@@ -38,6 +37,50 @@
     z-index: 999;
 }
 
+.title_song {
+    flex-basis: 280px;
+    flex-shrink: 0;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.copertina {
+    padding: 0.5rem 0.5rem;
+}
+
+.copertina img {
+    height: 60px;
+    border-radius: 8px 8px;
+}
+
+.title h4 {
+    color: white;
+}
+
+.title p {
+    color: lightslategray;
+}
+
+.love {
+    color: lightslategray;
+}
+
+@media all and (max-width: 700px) {
+    .title_song {
+        flex-basis: 160px;
+    }
+}
+
+.player {
+    flex-basis: 500px;
+    flex-grow: 3;
+}
+
+.volume {
+    flex-basis: 280px;
+    flex-grow: 1;
+}
+
 /*  css sidebar fixed left  */
 
 .sidebar {
@@ -47,4 +90,29 @@
     position: fixed;
     left: 0%;
     z-index: 998;
+}
+
+@media all  and (max-width:624px) {
+    .sidebar {
+        width: 90px;
+    }
+}
+
+/*  upgrade section */
+
+.upgrade {
+    background-color: black;
+    height: 80px;
+    width: 100vw;
+    position: fixed;
+    top: 0%;
+    z-index: 997;
+}
+
+/*  songs section */
+
+.songs {
+    background-color:#121212;
+    width: calc (100vh - 280px);
+    height: 1200px;
 }
