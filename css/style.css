@@ -6,6 +6,11 @@ body {
     font-family: 'Montserrat', sans-serif;
 }
 
+h1, h2, h3, p, span {
+    color: white;
+    padding: 2rem 0;;
+}
+
 /*  css media player footer */
 
 .media_player {
@@ -132,8 +137,11 @@ body {
 }
 
 .sidebar i {
-    padding-left: 1rem;
     margin-right: 0.5rem;
+}
+
+.padding_left {
+    padding-left: 1rem;
 }
 
 .logo img {
@@ -142,6 +150,24 @@ body {
 
 .home_btn {
     margin-top: 1rem;
+}
+
+ul {
+    text-decoration: none;
+    list-style: none;
+}
+
+li {
+    margin-top: 0.7rem;
+}
+
+li a {
+    padding-left: 1rem;
+}
+
+.profile {
+    position: fixed;
+    bottom: 110px;
 }
 
 /*  upgrade section */
