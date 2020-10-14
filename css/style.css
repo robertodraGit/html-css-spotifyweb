@@ -4,6 +4,7 @@ html {
 
 body {
     font-family: 'Montserrat', sans-serif;
+    background-color:#121212;
 }
 
 h1, h2, h3, span {
@@ -222,14 +223,18 @@ li a {
 /*  songs section */
 
 .songs {
-    position: fixed;
+    position: absolute;
     background-color:#121212;
     width: calc(100% - 230px);
     right: 0%;
     top: 80px;
-    height: calc(100% -180px);
+    height: auto;
     overflow-x: hidden; 
     overflow-y: auto; 
+}
+
+.wrapper_under_player {
+    height: 110px;
 }
 
 .nav_songs {
@@ -240,11 +245,11 @@ li a {
 .nav_songs p {
     color: white;
     display: inline;
-    padding: 1rem 1.5rem;
 }
 
 .nav_songs a {
     color: white;
+    padding: 0.5rem 1rem;
     text-decoration: none;
 }
 
@@ -253,8 +258,8 @@ li a {
 }
 
 .album {
-    margin-left: 1rem;
-    margin-right: 1rem; 
+    margin-left: 1.5rem;
+    margin-right: 1.5rem; 
 }
 
 .recent {
@@ -266,7 +271,6 @@ li a {
 .card {
     padding: 1rem 1rem;
     text-align: center;
-    flex: 0 0 calc(100%/5);
 }
 
 .card h3 {
