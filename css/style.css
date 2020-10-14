@@ -8,7 +8,7 @@ body {
 
 h1, h2, h3, p, span {
     color: white;
-    padding: 2rem 0;;
+    padding: 1.4rem 0;;
 }
 
 /*  css media player footer */
@@ -152,6 +152,10 @@ h1, h2, h3, p, span {
     margin-top: 1rem;
 }
 
+.home_btn .fas {
+    font-size: 20px;
+}
+
 ul {
     text-decoration: none;
     list-style: none;
@@ -165,9 +169,19 @@ li a {
     padding-left: 1rem;
 }
 
+.playlist {
+    height: calc(100% - 370px);
+    overflow-x: hidden; 
+    overflow-y: auto; 
+}
+
 .profile {
     position: fixed;
     bottom: 110px;
+}
+
+.profile p {
+    padding: 0.5rem 0.5rem;
 }
 
 /*  upgrade section */
@@ -187,12 +201,55 @@ li a {
     border-color: white;
     color: white;
     padding: 1.5rem 1.5rem;
+    margin-top: 0.5rem;
+    margin-right: 1rem;
+    transition: transform 0.5s ease;
+}
+
+.upgrade button:hover {
+    transform: scale(110%);
 }
 
 /*  songs section */
 
 .songs {
+    position: fixed;
     background-color:#121212;
-    width: calc (100vh - 280px);
+    width: calc(100% - 280px);
+    right: 0%;
+    top: 80px;
     height: 1200px;
+    /* text-align: center; */
+}
+
+.nav_songs {
+    margin-top: 1rem;
+    text-align: center;
+}
+
+.nav_songs p {
+    color: white;
+    display: inline;
+    padding: 1rem 1.5rem;
+}
+
+.nav_songs a {
+    color: white;
+    text-decoration: none;
+}
+
+.nav_songs a:hover {
+    border-bottom: 2px solid lime;
+}
+
+.album {
+
+}
+
+.card {
+
+}
+
+.card img {
+    max-height: 100px;
 }
