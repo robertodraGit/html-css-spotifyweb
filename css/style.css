@@ -6,9 +6,14 @@ body {
     font-family: 'Montserrat', sans-serif;
 }
 
-h1, h2, h3, p, span {
+h1, h2, h3, span {
     color: white;
-    padding: 1.4rem 0;;
+    padding: 1.4rem 0;
+}
+
+p {
+    color: white;
+    padding:  0.8rem 0;
 }
 
 /*  css media player footer */
@@ -118,7 +123,7 @@ h1, h2, h3, p, span {
 .sidebar {
     background-color: #040404;
     height: 100vh;
-    width: 280px;
+    width: 230px;
     position: fixed;
     left: 0%;
     z-index: 998;
@@ -215,11 +220,12 @@ li a {
 .songs {
     position: fixed;
     background-color:#121212;
-    width: calc(100% - 280px);
+    width: calc(100% - 230px);
     right: 0%;
     top: 80px;
-    height: 1200px;
-    /* text-align: center; */
+    height: calc(100% -180px);
+    overflow-x: hidden; 
+    overflow-y: auto; 
 }
 
 .nav_songs {
@@ -243,13 +249,65 @@ li a {
 }
 
 .album {
-
+    margin-left: 1rem;
+    margin-right: 1rem; 
 }
+
+.recent {
+    flex: 0 0 100%;
+}
+
+/* CSS CARD */
 
 .card {
-
+    padding: 1rem 1rem;
+    text-align: center;
+    flex: 0 0 calc(100%/5);
 }
 
-.card img {
-    max-height: 100px;
+.card h3 {
+    color: white;
+    padding: 0.5rem 0.5rem;
 }
+
+.card p {
+    padding: 0.2rem 0.5rem;
+}
+
+.album_card {
+    position: relative;
+    max-width: 100%;
+}
+
+.img_card {
+    opacity: 1;
+    display: block;
+    height: auto;
+    transition: 0.3s ease;
+    backface-visibility: hidden;
+}
+
+.play_hover {
+    transition: .3s ease;
+    opacity: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.play_hover img {
+    max-width: 100%;
+}
+
+.album_card:hover .img_card {
+    opacity: 0.3;
+}
+
+.album_card:hover .play_hover {
+    opacity: 1;
+}
+
+/* FINE CSS CARD */
