@@ -149,8 +149,12 @@ p {
     padding-left: 1rem;
 }
 
-.logo img {
-    max-height: 40px;
+.logo {
+    height: 30px;
+    background-image: url("../img/logo.svg");
+    background-position: left;
+    background-size: contain;
+    background-repeat: no-repeat;
 }
 
 .home_btn {
@@ -311,3 +315,29 @@ li a {
 }
 
 /* FINE CSS CARD */
+
+
+/*  MEDIA QUERY  */
+
+@media all and (max-width: 700px) {
+    .sidebar {
+        width: 70px;
+    }
+
+    .sidebar span, ul, h3 {
+        display: none;
+    }
+
+    .profile {
+        display:none;
+    }
+
+    .logo {
+        background-image: url("../img/logo-small.svg");
+        background-position: center;
+    }
+
+    .songs {
+        width: calc(100% - 70px);
+    }
+}
