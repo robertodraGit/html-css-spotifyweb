@@ -310,6 +310,10 @@ li a {
     backface-visibility: hidden;
 }
 
+.author {
+    border-radius: 50%;
+}
+
 .play_hover {
     transition: .3s ease;
     opacity: 0;
