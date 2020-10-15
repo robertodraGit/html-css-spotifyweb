@@ -172,7 +172,7 @@ ul {
 }
 
 li {
-    margin-top: 0.7rem;
+    margin-top: 1rem;
 }
 
 li a {
@@ -192,6 +192,10 @@ li a {
 
 .profile p {
     padding: 0.5rem 0.5rem;
+}
+
+.profile p a:hover {
+    border-left: none;
 }
 
 /*  upgrade section */
@@ -243,18 +247,24 @@ li a {
 }
 
 .nav_songs p {
-    color: white;
+    line-height: 2.2rem;
+    color: lightgray;
     display: inline;
 }
 
 .nav_songs a {
-    color: white;
     padding: 0.5rem 1rem;
     text-decoration: none;
+    transition: 0.1s;
+}
+
+.nav_songs p:hover {
+    color: white;
 }
 
 .nav_songs a:hover {
     border-bottom: 2px solid lime;
+    border-radius: 2px;
 }
 
 .album {
@@ -326,7 +336,32 @@ li a {
 
 /*  MEDIA QUERY  */
 
+@media all and (max-width: 1500px) {
+    .album {
+        flex-wrap: wrap;
+    }
+
+    .card {
+        max-width: calc(100% / 4);
+    }
+}
+
+@media all and (max-width: 950px) {
+    .album {
+        flex-wrap: wrap;
+    }
+
+    .card {
+        max-width: calc(100% / 3);
+    }
+}
+
 @media all and (max-width: 700px) {
+
+    .upgrade {
+        display: none;
+    }
+
     .sidebar {
         width: 70px;
     }
@@ -346,25 +381,24 @@ li a {
 
     .songs {
         width: calc(100% - 70px);
+        top: 0%;
     }
-}
 
-@media all and (max-width: 1500px) {
     .album {
         flex-wrap: wrap;
     }
 
     .card {
-        max-width: calc(100% / 4);
+        max-width: calc(100% / 2);
     }
 }
 
-@media all and (max-width: 950px) {
+@media all and (max-width: 450px) {
     .album {
         flex-wrap: wrap;
     }
 
     .card {
-        max-width: calc(100% / 3);
+        max-width: calc(100% / 1);
     }
 }
