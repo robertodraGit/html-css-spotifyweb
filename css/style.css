@@ -263,7 +263,7 @@ li a {
 }
 
 .recent {
-    flex: 0 0 100%;
+    margin-left: 1.5rem;
 }
 
 /* CSS CARD */
@@ -271,6 +271,8 @@ li a {
 .card {
     padding: 1rem 1rem;
     text-align: center;
+    max-width: calc(100% / 6);
+    min-width: 120px;
 }
 
 .card h3 {
@@ -290,6 +292,7 @@ li a {
 .img_card {
     opacity: 1;
     display: block;
+    width: 100%;
     height: auto;
     transition: 0.3s ease;
     backface-visibility: hidden;
@@ -343,5 +346,25 @@ li a {
 
     .songs {
         width: calc(100% - 70px);
+    }
+}
+
+@media all and (max-width: 1500px) {
+    .album {
+        flex-wrap: wrap;
+    }
+
+    .card {
+        max-width: calc(100% / 4);
+    }
+}
+
+@media all and (max-width: 950px) {
+    .album {
+        flex-wrap: wrap;
+    }
+
+    .card {
+        max-width: calc(100% / 3);
     }
 }
